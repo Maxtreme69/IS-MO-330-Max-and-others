@@ -1,0 +1,74 @@
+body {
+    background: lightgray;
+  }
+
+  
+h1 {
+  position: relative;
+	font: 100px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+  color: rgb(226, 47, 47); 
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  
+  .fill {
+    background-image: url(stick-note-crop.png);
+    position: relative;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  /* Reference */
+  /* https://pixabay.com/vectors/note-post-it-reminder-sticky-note-147951/ */
+  
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .empty {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: solid 3px lightgray;
+    background: white;
+    border: 0px;
+  }
+  
+  .hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+  }
+
+  table{
+    margin: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+    border-spacing: 0px;
+  }
+
+  th {
+    background-color: rgb(61, 148, 248);
+    margin: 0px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  tr {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .tableColumn td:nth-child(2), td:nth-child(4), td:nth-child(6), th:nth-child(2), th:nth-child(4), th:nth-child(6) { 
+    width: 150px; 
+    background: lightgray;
+  }
