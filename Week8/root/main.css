@@ -1,0 +1,169 @@
+body {
+    background: lightgray;
+  }
+
+  
+h1 {
+  position: relative;
+	font: 100px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+  color: rgb(226, 47, 47); 
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h4, p, .center{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  margin: 0px;
+}
+
+form, input{
+  background-color: rgb(245 233 139);
+  border: none;
+  width: 200px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+textarea{
+  background-color: rgb(245 233 139);
+  border: none;
+  width: 190px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+/* SCROLL BAR */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(245 233 139);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 5px; 
+  height: 50px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.button-activity{
+  /* width: 75px;
+  height: 35px; */
+  position: center;
+  margin-left: 84%;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+  
+  .fill {
+    /* background-image: url(stick-note-crop.png); */
+    position: relative;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(245 233 139);
+    display: block;
+    overflow: auto;
+    overflow-x: hidden; //horizontal;
+  }
+  
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .empty {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: solid 3px lightgray;
+    background: white;
+    border: 0px;
+  }
+  
+  .hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+  }
+
+ .calendar-th {
+    margin: 0px;
+    border-spacing: 0px;
+    width: 90px; 
+    height: 25px; 
+    background-color: rgb(61, 148, 248) !important;
+  }
+
+  .calendar-td {
+    margin: 0px;
+    padding: 100px;
+    border-spacing: 0px;
+    width: 60px; 
+    background-color: white !important;
+    border: solid black;
+  }
+
+  #blue{
+    background-color: rgb(61, 148, 248);
+  }
+
+  /* .calendar{
+    margin: 0px;
+    padding: 100px;
+    border-spacing: 0px;
+    width: 150px; 
+    
+  } */
+
+  table{
+    margin: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+    border-spacing: 0px;
+  }
+
+  th {
+    background-color: rgb(61, 148, 248);
+    margin: 0px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  tr {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  td:nth-child(2), td:nth-child(4), td:nth-child(6), th:nth-child(2), th:nth-child(4), th:nth-child(6) { 
+    width: 150px; 
+    background: lightgray;
+  }
+
+  .tableColumn{
+    padding-left: 23%;
+  }
+
+  /* Reference */
+  /* https://pixabay.com/vectors/note-post-it-reminder-sticky-note-147951/ */
+  /* https://www.youtube.com/watch?v=C22hQKE_32c */
