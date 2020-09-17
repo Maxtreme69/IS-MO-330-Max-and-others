@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localhost</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav></nav>
+        <div id="navbar">
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            s
+            <div id="app-title">
+                <div>
+                    <h1> SCRUM MASTER</h1>
+                </div>
+            </div>
+            <div id="user"><img src="IMG_3120.JPG"></div>
+        </div>
+    </header>
+
+    <main id="app">
+        <section id="board">
+            <div id="logo">
+                <div class="shape">
+                    <p id="Letter">M</p>
+                </div>
+                <div id="creds">
+                    <div id="info">Max & Others</div>
+
+                </div>
+
+            </div>
+
+
+            <div id="select-form4Group">
+                <select name="members" id="select-tab">
+                <option >Group members
+                    <!-- <button class="Option-button">x</button> -->
+                </option>
+            </select>
+                <button id="buttonn">+</button>
+            </div>
+
+            <div id="add-task-form">
+                <input id="task-value" placeholder="Add Task...">
+                <button id="add-task">+</button>
+
+            </div>
+
+        </section>
+        <section id="columns">
+            <div class="columnn dropzone">
+                <h3 class="column-title">Backlog</h3>
+                <ul class="tasks" id="tasks-added">
+
+                    <!-- <li class="task fill" draggable="true">
+                        <div class="task-content">Create cards like this!!!!!!</div>
+                        <div class="trash">X</div>
+                    </li> -->
+
+                </ul>
+            </div>
+            <div class="columnn dropzone">
+                <h3 class="column-title">Todo</h3>
+            </div>
+            <div class="columnn dropzone">
+                <h3 class="column-title">Progressing</h3>
+            </div>
+            <div class="columnn dropzone">
+                <h3 class="column-title">Done</h3>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="bg-modal">
+
+        <div class="modal-content">
+            <div class="close">+</div>
+            Register the New member Please!
+
+            <input type="text" placeholder="New Member Name..." class="input name">
+            <input type="text" placeholder="New Member Email.." class="input email">
+            <button class="bt">SUBMIT</button>
+
+
+
+        </div>
+
+    </div>
+
+    //Firebase Libraries
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
