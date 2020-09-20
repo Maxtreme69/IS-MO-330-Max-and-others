@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Max and Others Assignment 1</title> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <div class="wrapper">
+      <div class ="box1"></div>
+
+      <div class="box2">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="what.html">WHAT</a></li>
+            <li><a class="current" href="when.html">WHEN</a></li>
+            <li><a href="how.html">HOW</a></li>
+          </ul>
+      </nav>
+          
+      </div>
+     </head>
+
+      <div class="box3">
+          <table class="a down">
+            <tr>
+              <th><h1 class="header1">Description</h1></th>
+            </tr>
+            <tr>
+              <td class="pwhen">We intend to develop a scrum/kanban board in the form of a web application that
+                 assists users in keeping track of their projects progress. The board is monitored and referred
+                  to by the team and shows all tasks during daily meetings, keeping the team focused on the remaining
+                   tasks and goals. The Scrumboard application has the functionality to create a project and add members,
+                    creating notes that are first stored in a backlog, users can then add tasks to the note to be 
+                    completed as well as remove tasks. Users can also drag and drop the notes from different parts of the
+                     scrumboard into other parts of the board e.g. move notes out of the backlog into the to do category or 
+                     in progress category for instance. Developers will be able to drag avatars that represent developers
+                      who are working on a specific task on to the notes to make it clear who is doing what task. The notes
+                       will be customisable, users will have the option to change the colour and font of the notes. The 
+                       Scrumboard application includes a calendar feature that can be used to set deadlines and save the state
+                        of the notes on a given day to keep a timeline of the project’s development. When tasks are completed
+                         they will be moved to the done pile.</td>
+            </tr>
+
+            <table class="a">
+              <tr>
+                <th class="header1">Demonstrable Outcomes</th>
+              </tr>
+              <tr>
+                <th class="header2">Project Motivation</th>
+              </tr>
+              <tr>
+                <td class="pwhen">Our group thought that it would be useful to have an application that could be used to help us
+                   in future application development projects. Although similar applications exist like Trello, our team wanted
+                    to focus on an application that was more specific to the scrumboard and would expand upon existing user board
+                     applications by adding a calendar features to track projects and set deadlines. Furthermore, our team thought
+                      that it would be a great project to challenge ourselves and become familiar with new programming languages,
+                       as well as developing new functionalities that we have never created before.</td>
+              </tr>
+
+              <table class="a">
+                <tr>
+                  <th class="header1">Minimum Viable Features (MVF)</th>
+                </tr>
+                <tr>
+                  <th class="header2">Create project</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">When users open the application for the first time, they will have to create a project.
+                     There will be a graphical interface and an input field.  </td>
+                </tr>
+                <tr>
+                  <th class="header2">Validation test</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">When users type in text in the enter project name form and click add Team name is added
+                     to the database and project name appears on interface to indicate that project is created.</td>
+                </tr>
+
+                <table class="a">
+                <tr>
+                  <th class="header2">Add team members</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">The Scrumboard application will have the capability to add team members to the project by
+                     clicking on the plus icon. This will be displayed on the same graphical interface below the
+                      create project input field. </td>
+                </tr>
+                <tr>
+                  <th class="header2">Validation test</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">When plus icon is clicked a text field appears that allows users to type in team members 
+                     when the team member clicks submit the team member is added to the database and the team
+                      member appears on the interface to let the user know that the member has been added. </td>
+                </tr>
+                <tr>
+                  <td><img class="img1" src="GUI.png"></td>
+                </tr>
+
+                <table class="a">
+                <tr>
+                  <th class="header2">Create grid with categories</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">A five column layout will be displayed that contains the categories backlog to do, dev,
+                     test and release which users can drop their notes into different categories.   </td>
+                </tr>
+                <tr>
+                  <th class="header2">Validation test</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">5 columns should appear when user has authenticated their group and logged in</td>
+                </tr>
+                <tr>
+                  <td><img class="img2" src="backlog.png"></td>
+                </tr>
+
+                <table class="a">
+                <tr>
+                  <th class="header2">Create Notes</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">The Scrumboard application will have the functionality to create notes which can add tasks.</td>
+                </tr>
+                <tr>
+                  <th class="header2">Validation test</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">When the + icon is clicked a new sticky note will appear, when the user types in information on the note
+                     text will appear also.
+                     When user clicks the + icon on the sticky note a new task is created. 
+                    </td>
+                </tr>
+
+                <table class="a">
+                <tr>
+                  <th class="header2">Delete notes</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">The Scrumboard application will have the functionality to delete notes as well as delete tasks.</td>
+                </tr>
+                <tr>
+                  <th class="header2">Validation test</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">When the X icon is clicked on the top right corner the sticky note will delete.
+                    When the X icon is clicked above task the task will delete. 
+                    </td>
+                </tr>
+                <tr>
+                  <td><img class="img1" src="Note.png"></td>
+                </tr>
+
+                <table class="a">
+                <tr>
+                  <th class="header2">Drag and drop notes</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">Drag and drop functionality of the notes containing tasks is an essential feature
+                     of this application as been able to move the notes into different categories is a must.</td>
+                </tr>
+                <tr>
+                  <th class="header2">Validation test</th>
+                </tr>
+                <tr>
+                  <td class="pwhen">A calendar should display above the scrum board when the user logs in. 
+
+                    When user clicks on different days it should show the state of the scrum board during these different dates.  
+                    
+                    When the user taps on the set deadline icon that date should be set as the project deadline and that day in
+                     the calendar changes to red. 
+                    </td>
+                    <tr>
+                      <td><img class="img2" src="Scrum.png"></td>
+                    </tr>
+
+                    <table class="a">
+                    <tr>
+                      <th class="header1">Extended Viable Features (EVF)</th>
+                    </tr>
+                    <tr>
+                      <th class="header2">Customization of font size & color, background and stick notes</th>
+                    </tr>
+                    <tr>
+                      <td class="pwhen">-Users will have the ability to change the colour of sticky notes and background of logboard </td>
+                    </tr>
+                    <tr>
+                      <th class="header2">Validation test</th>
+                    </tr>
+                    <tr>
+                      <td class="pwhen">-When users click on the options icon window pop up box will appear with the options to change colour of sticky notes, font-family, font-size and background of Scrum-board 
+                        -When user selects any of the different customizable options the effects should take place immediately e.g. notes turn colour from yellow to blue, background changes from white to black. 
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img class="img2" src="ScrumboardOptions.png"></td>
+                    </tr>
+
+                    <table class="a">
+                    <tr>
+                      <th class="header2">Drag and drop features of avatars</th>
+                    </tr>
+                    <tr>
+                      <td class="pwhen">Users can create avatars that can be placed on a sticky note to better emphasise who is doing each task in project.</td>
+                    </tr>
+                    <tr>
+                      <th class="header2">Validation test</th>
+                    </tr>
+                    <tr>
+                      <td class="pwhen">-When user clicks avatar icon an avatar appears. 
+                        -User can drag avatar to sticky note where it stays in place. 
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img class="img2" src="Scrum Avatar Images.png"></td>
+                    </tr>
+
+
+                            <table class="a">
+                              <tr>
+                                <th class="header1">Project Justification</th>
+                              </tr>
+                              <tr>
+                                <th class="header2">Justified Workload</th>
+                              </tr>
+                              <tr>
+                                <td class="pwhen">
+                                  Since we are working on a web application, the approximate time the project should take would fulfil the time requirements. With assistance using the trello board, we will try to allocate the tasks evenly so every student will be able to do equal amounts of work, depending on the difficulty.  
+                                  As a requirement from the assignment, every student is to do some sort of coding. Since every individual in max-and-others have similar coding experience, the workload in developing the core features would generally be equal.  
+                                </tr>
+                                <table class="center" border="1" cellspacing="0">
+                                  <tbody>
+                                      <tr>
+                                          <td width="710" valign="top" colspan="4">
+                                              <p>
+                                                  <em>Week 1 and 2: Workload was fairly light as we were starting the semester </em>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  Research and brainstorm project ideas <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  27/07/2020
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  10/08/2020
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top" rowspan="4">
+                                              <p>
+                                                  Max
+                                              </p>
+                                              <p>
+                                                  Mohamed
+                                              </p>
+                                              <p>
+                                                  Sing
+                                              </p>
+                                              <p>
+                                                  Nipun
+                                              </p>
+                                              <p>
+                                                  Benjamin
+                                              </p>
+                                              <p>
+                                                  Yashraj
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  Writing a small paragraph about potential ideas after first
+                                                  rejection <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  27/07/2020
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  10/08/2020
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  Doing microdentials <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  27/07/2020 <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  10/08/2020
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  Approx: 1-5 hours each <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  27/07/2020
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                          <td width="177" valign="top">
+                                              <p>
+                                                  10/08/2020
+                                              </p>
+                                              <p>
+                                                  <em></em>
+                                              </p>
+                                          </td>
+                                      </tr>
+                                      <tr>   
+                                        
+                <td width="177" valign="top">
+                  <p>
+                      Set up AWS
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      09/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      14/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      Benjamin <em></em>
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Design logo/ website layout
+                  </p>
+                  <p>
+                      (1-2 hours)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      09/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      14/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      Benjamin
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Create use cases for each feature based off user stories
+                  </p>
+                  <p>
+                      (1-4 hours)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      09/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      16/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      Mohamed Sing Nipun
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      User stories – Acceptance criteria
+                  </p>
+                  <p>
+                      (1-3 hours)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      09/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      16/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      Yashraj Sing Max
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Setting up Github
+                  </p>
+                  <p>
+                      (1 hour)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      09/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      16/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      Max
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Create user stories on Trello
+                  </p>
+                  <p>
+                      (1 hour)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      03/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      10/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      Max
+                  </p>
+                  <p>
+                      Mohamed
+                  </p>
+                  <p>
+                      Sing
+                  </p>
+                  <p>
+                      Nipun
+                  </p>
+                  <p>
+                      Benjamin
+                  </p>
+                  <p>
+                      Yashraj
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="710" valign="top" colspan="4">
+                  <p>
+                      <em>Week 5: Design phase (3 weeks)</em>
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Design of the overall mobile app for the different
+                      functions
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      17/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      23/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top" rowspan="3">
+                  <p>
+                      Benjamin
+                  </p>
+                  <p>
+                      Mohamed
+                  </p>
+                  <p>
+                      Sing
+                  </p>
+                  <p>
+                      Yashraj
+                  </p>
+                  <p>
+                      Max
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Phase 1: initial sketch up of general design,
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      17/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      23/09/2020
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Each screen/tab allocated between all team members
+                  </p>
+                  <p>
+                      (3-4 hours each)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      17/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      23/09/2020
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="710" valign="top" colspan="4">
+                  <p>
+                      <em>Week 6</em>
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Design of the overall mobile app for the different
+                      functions
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      23/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top" rowspan="3">
+                  <p>
+                      Benjamin
+                  </p>
+                  <p>
+                      Mohamed
+                  </p>
+                  <p>
+                      Sing
+                  </p>
+                  <p>
+                      Yashraj
+                  </p>
+                  <p>
+                      Max
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Phase 1: initial sketch up of general design,
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      23/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Each screen/tab allocated between all team members
+                  </p>
+                  <p>
+                      (3-4 hours each)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      23/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="710" valign="top" colspan="4">
+                  <p>
+                      <em>Week 7</em>
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Mockups, Design and Build
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      6/10/2020
+                  </p>
+              </td>
+              <td width="177" valign="top" rowspan="4">
+                  <p>
+                      Benjamin
+                  </p>
+                  <p>
+                      Mohamed
+                  </p>
+                  <p>
+                      Sing
+                  </p>
+                  <p>
+                      Yashraj
+                  </p>
+                  <p>
+                      Max
+                  </p>
+                  <p>
+                      Nipun
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Phase 2: developing sketches, starting to put it into
+                      computer, close idea to the actual prototype
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      6/10/2020
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Usage of prototyping tools, (such as figma) creating all
+                      layouts
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      6/10/2020
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      as figma) creating all layouts
+                  </p>
+                  <p>
+                      (3-4 hours each)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      6/10/2020
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Starting off researching on how to code the functionalities
+                      of the mobile app
+                  </p>
+                  <p>
+                      (1-2 hours each)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      30/09/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      6/10/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+              </td>
+          </tr>
+          <tr>
+              <td width="710" valign="top" colspan="4">
+                  <p>
+                      Week 8
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Finalise Design Documentation
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      6/10/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      13/10/2020
+                  </p>
+              </td>
+              <td width="177" valign="top" rowspan="2">
+                  <p>
+                      Benjamin
+                  </p>
+                  <p>
+                      Mohamed
+                  </p>
+                  <p>
+                      Sing
+                  </p>
+                  <p>
+                      Yashraj
+                  </p>
+                  <p>
+                      Max
+                  </p>
+                  <p>
+                      Nipun
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td width="177" valign="top">
+                  <p>
+                      Finalisation of designs (how the app will look)
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      6/10/2020
+                  </p>
+              </td>
+              <td width="177" valign="top">
+                  <p>
+                      13/10/2020
+                  </p>
+              </td>
+          </tr>
+          <tr> 
+
+            <table class="a">
+              <tr>
+                <td class="pwhen"><b>Student allocation of task may change further down the project depending on time frame or help</b><br>
+                <b><u>The group’s minimum viable features includes:</u></b><br>
+                <ul>
+                  <li>Create Project</li>
+                  <li>Adding Team members</li>
+                  <li>Creating grids with categories</li>
+                  <li>Creating/Deleting notes</li>
+                  <li>Dragging and dropping notes</li>
+                  <li>Calendar</li>
+                </ul>
+                <b><u>Extended Features are:</u></b><br>
+                <ul>
+                  <li>Customisation of font size, colour, background and notes</li>
+                  <li>Drag and drop of avatars</li>
+                </ul>
+              </td>
+              </tr>
+              <tr>
+                <td class="pwhen">Majority of these functions will require coding, which all of us
+                   are willing to do and gain extensive knowledge on. Since all of us have worked
+                    with Java before, it is very likely that all of us will be allocated with 1 function
+                     to code in java. Before we start on developing the actual application, our weeks
+                      are divided into sections approximations of tasks within the weeks</td>
+              </tr>
+
+              <table class="center" border="1" cellspacing="0">
+              <td width="710" valign="top" colspan="4">
+                <p>
+                    Week 9
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Design and Build iteration.
+                </p>
+                <p>
+                    -Using java to code all key and minimum functions for the
+                    application
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Benjamin
+                </p>
+                <p>
+                    Mohamed
+                </p>
+                <p>
+                    Sing
+                </p>
+                <p>
+                    Yashraj
+                </p>
+                <p>
+                    Max
+                </p>
+                <p>
+                    Nipun
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Create Project (Scrum board project)
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Benjamin
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Creating grids with categories
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Mohamed
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Creating/Deleting notes
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Sing
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Dragging and dropping notes
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Yashraj
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Calendar
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Max
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Customisation of font size, colour, background and notes
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Nipun
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Drag and drop of avatars
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Mohamed
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Customisation of font size, colour, background and notes
+                </p>
+                <p>
+                    (1-3 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    13/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Max
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="710" valign="top" colspan="4">
+                <p>
+                    Week 10
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Design and Build iteration.
+                </p>
+                <p>
+                    -Using java to code all key and minimum functions for the
+                    application
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Benjamin
+                </p>
+                <p>
+                    Mohamed
+                </p>
+                <p>
+                    Sing
+                </p>
+                <p>
+                    Yashraj
+                </p>
+                <p>
+                    Max
+                </p>
+                <p>
+                    Nipun
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Create Project (Scrum board project)
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Benjamin
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Creating grids with categories
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Mohamed
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Creating/Deleting notes
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Sing
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Dragging and dropping notes
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Yashraj
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Calendar
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Max
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Customisation of font size, colour, background and notes
+                </p>
+                <p>
+                    (4-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Nipun
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Drag and drop of avatars
+                </p>
+                <p>
+                    (1-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Mohamed
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Customisation of font size, colour, background and notes
+                </p>
+                <p>
+                    (1-5 hours)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    20/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Max
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="710" valign="top" colspan="4">
+                <p>
+                    <em>Week 11: prototype finalisation </em>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Design and Build Iteration
+                </p>
+                <p>
+                    Same key functions being developed by the same individuals,
+                    (unless changes are to be made)
+                </p>
+                <p>
+                    Last week is for finalisation of the application, prototype
+                    should be working (applies to all functions by everyone)
+                </p>
+                <p>
+                    (5 hours each )
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    27/10/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    4/11/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Benjamin
+                </p>
+                <p>
+                    Mohamed
+                </p>
+                <p>
+                    Sing
+                </p>
+                <p>
+                    Yashraj
+                </p>
+                <p>
+                    Max
+                </p>
+                <p>
+                    Nipun
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="710" valign="top" colspan="4">
+                <p>
+                    <em>Week 12: documents being finalised</em>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="177" valign="top">
+                <p>
+                    Finalise portfolio Documentation
+                </p>
+                <p>
+                    (1-3 hours each)
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    4/11/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    11/11/2020
+                </p>
+            </td>
+            <td width="177" valign="top">
+                <p>
+                    Benjamin
+                </p>
+                <p>
+                    Mohamed
+                </p>
+                <p>
+                    Sing
+                </p>
+                <p>
+                    Yashraj
+                </p>
+                <p>
+                    Max
+                </p>
+                <p>
+                    Nipun
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <em></em>
+</p>
+<p>
+    <em></em>
+</p>
+
+<table class="a">
+  <tr>
+    <th class="header1">Beyond current capabilities</th>
+  </tr>
+  <tr>
+    <td class="pwhen">As a group of students that are new to the I.T. industry and its many areas of we are aware that we are not
+       fully skilled to complete some of the tasks we need to complete our project. Challenging the students abilities is a key part of this assignment and after some inspection of what is required by us and discussion with the team, it is clear to us that we are required to spend a considerate amount of time gather the knowledge we need. 
+       To resolve this major issue, we have access to numerous resources on both canvas, YouTube and other websites that can help our team
+        by giving us a starting point to implement the feature within our website.</td>
+  </tr>
+  <tr>
+    <th class="header2">Coding</th>
+  </tr>
+  <tr>
+    <td class="pwhen">The fact that we are amateurs at coding puts us at a disadvantage when taking on the task of successfully completing our project. However, we are confident in our ability to step out of our comfort zone and take on the challenge of learning new skills that will be useful during this course as well as in the future. Information gathered from both last semesters subjects as well as from this semesters study combined with the information gathered from research will allow us to be adequately prepared for the task at hand.  
+      However, it will not be easy to grasp some of the newer more complicated concepts with the basic knowledge that we have acquired previously. To efficiently work through this project, we will have to identify each team members strengths and use them to our advantage in completing this project by splitting the workload between ourselves according to our strengths. But in order to make sure that each team member gets some experience in each part of the coding procedure and functions we will read the comments left by the programmer and  
+      try to understand what action is carried out by each part of the code. </td>
+  </tr>
+  <tr>
+    <th class="header2">Creating a Database</th>
+  </tr>
+  <tr>
+    <td class="pwhen">Some team members are more familiar with databases than others as they completed Practical Database Concepts as a subject last semester. We will work to use this to act as strength, with the use of team members who are familiar with databases other team members will be able to familiarise themselves as well. 
+      As having a database is a major feature of our project it is important for us to be able to create a database that is both functional and effective, many of the functions that are tied to project require the database to be functional in order to operate. Though this task will be delegated between team members all the members
+       will take part in the task to make sure that even members that are not either familiar with the concept or are not confident gain the confidence they need in order to use this knowledge in their future careers.</td>
+  </tr>
+  <tr>
+    <th class="header2">UI Design</th>
+  </tr>
+  <tr>
+    <td class="pwhen">Like creating a Database some students are comfortable with taking on the task of creating a UI with the use of knowledge that they have from their previous courses such as User Cantered Design. Similarly, it is important that we use this in our favour and move towards effectively completing this task. 
+      Our aim is to create a UI that uses conventional styles to create an effective and easy to use UI that will allow the user to quickly complete the tasks that they wish to on the application. As our project is a scrum board, helping users to efficiently use their time to reach their objectives, it is important  to us 
+      that the users are not wasting their time on their tasks rather than our application, which can also deter potential users. When creating the UI, we will make sure that each team member has input in the design stage to assure a project that we are all pleased with.</tr>
+      <tr>
+        <th class="header2">Overcoming the Difficulties</th>
+      </tr>
+      <tr>
+        <td class="pwhen">When taking on a project such as this it is important to have a planned approach, and as mentioned above after discussions we have realised that we will have to work towards learning new skills in order to be able to complete the tasks for this project. 
+
+          Many of the skills that we have acquired during previous subjects will be implemented during the completion of this project. However, those skills are not adequate for us to create a project to extent we intended to. Therefore, all team members will be required to spend extra time
+           acquiring skills through research, which be one of our other major resources, they will later use these skills in finishing the functions that were assigned for them. Once each function is completed the other team members will have a look at the code to grasp how each
+            function of the application is carried out by that section of code.</tr>
+          <tr> 
+
+<table class="a">
+  <tr>
+    <th class="header1">Risks</th>
+  </tr>
+  <tr>
+    <th class="header2">Risk 1</th>
+  </tr>
+  <tr>
+    <td class="pwhen">Within our Scrum Board idea we’ve decided on enlisting a unique feature which is a calendar, the calendar  will be able to set dates and view the states of the scrum board at different dates, this feature will allow users to easily view project deadlines. The risks of this feature within our project
+       is its implementation due to most of the group members lacking coding skills as most of us are beginners. By having this as one of our main and unique features we risk the ability to complete the project or fulfill the intended result as we may not be well prepared or are unable to implement the feature in the short span of time.   
+      Certain tools or rather expertise that we are lacking are the coding skills to implement the calendar feature, other resources we are limited by are time. Time is a factor that can influence how much effort we will put into creating the application as well as the learning curve required to build this application.   
+       To resolve this major issue, we have access to numerous resources on both canvas, YouTube and other websites that can help our team by giving us a starting point to implement the feature within our website.   </td>
+  </tr>
+
+  <tr>
+    <th class="header2">Risk 2</th>
+  </tr>
+  <tr>
+    <td class="pwhen">
+      A major risk that comes with creating the scrum board is the originality of the idea, as there are already many other scrum board applications and websites out there that we need to compete against and make ours stand out, the risks for creating a scrum board idea is the possibility of it being the same as others. 
+      Although we have all the tools to create the project there is always the uncertainty that the project could offer nothing unique to other competitors out there, as it could be too similar to other scrum board like applications and therefore not stand out as much as our team would of hoped. 
+      Although there seems to be many variants of the kanban/scrum board, ours tries to resolve this by focusing on being project oriented rather than general use, this is done through setting up scrum boards with 5 columns for the projects in the order of Backlog, To Do, Dev, Test and Release. By having a more project-oriented scrum board our project has the potential of standing out as users may be attracted to the sole idea of project management within a scrum board with a calendar feature. 
+    </tr>
+    <tr>
+      <th class="header2">Risk 3</th>
+    </tr>
+    <tr>
+      <td class="pwhen">
+        The implementation of the commit button is a potential risk for our project. The commit button is crucial for the setup of our database and its functionality, setting this up is a risk as it proves to be a problem in terms of programming, this feature also poses a risk in the sense of implementation of security protocols for privacy principles and user data storage. 
+        Setting up the database and programming the commit button to store the layout of the database seems to be a daunting task. as previously mentioned most of us are new to programming, some members seem to have experience in setting up databases which does reduce the difficulty of this task. Other resources we may need to access are privacy policy rules and following Australian regulations of storing user data. 
+        This risk can be solved through members doing heavy research into the implementation of the commit button and the database through YouTube or other resources. This could be considered a minor risk as some members are more comfortable in dealing with this feature. To resolve the risk of data storage we may need to include user disclosure when storing their data as well as the privacy policies which we may need to conduct research on as well.
+      </tr>
+        <tr>
+          <td class="pwhen">
+            The implementation of the commit button is a potential risk for our project. The commit button is crucial for the setup of our database and its functionality, setting this up is a risk as it proves to be a problem in terms of programming, this feature also poses a risk in the sense of implementation of security protocols for privacy principles and user data storage. 
+            Setting up the database and programming the commit button to store the layout of the database seems to be a daunting task. as previously mentioned most of us are new to programming, some members seem to have experience in setting up databases which does reduce the difficulty of this task. Other resources we may need to access are privacy policy rules and following Australian regulations of storing user data. 
+            This risk can be solved through members doing heavy research into the implementation of the commit button and the database through YouTube or other resources. This could be considered a minor risk as some members are more comfortable in dealing with this feature. To resolve the risk of data storage we may need to include user disclosure when storing their data as well as the privacy policies which we may need to conduct research on as well.
+          </tr>              
+
+                          <table class="a">
+                            <tr>
+                              <th class="header1">Team dynamics</th>
+                            </tr>
+                            <tr>
+                              <td class="pwhen">Within our team the 3 main challenges we face as a group are organizational skills,
+                                 communication and time management. in terms of our organizational skills, our team is severely lacking
+                                  in the sense of the way our work is managed within Microsoft teams as it tends to be cluttered up and
+                                   mixed between channels, this can be managed by having all files uploaded to the main channel.
+                                 For communication within our group, we seem to be less interactive outside our group meetings,
+                                  this can be solved by updating what each member is working on every 2nd or 3rd day. Lastly time
+                                   management seems to be somewhat of an issue as some members tend to be late or can’t arrive at some
+                                    meeting due to other obligations, this can be resolved by agreeing on a specific time that everyone
+                                     is available. </td>
+                            </tr>
+
+                     <div>
+                      <footer>
+                        © Max and Others 2020. All rights reserved
+                      </footer>
+                    </div>
+             
+            </body>
+
+
+
+</html>

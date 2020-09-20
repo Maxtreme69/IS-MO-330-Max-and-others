@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Bootstrap Carousel</title>
+
+    <link href="css/carousel.css" rel="stylesheet" type="text/css" /> 
+    
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/transition.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+	
+		$(document).ready(function(){
+			$('#oceanCarousel, #musiciansCarousel').carousel({
+			interval: false
+			});			
+			
+		});
+
+	</script>
+
+
+</head>
+<body>
+
+
+<div id="wrapper">
+
+
+<h1>Carousel Gallery with One Image</h1>
+  <!-- OCEAN GALLERY  -->        
+  <div id="musiciansCarousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+          <div class="active item">
+          	<a href="#"><img src="../images/large/musicians01.jpg"></a>
+          </div>
+          <div class="item">
+			<a href="#"><img src="../images/large/musicians02.jpg"></a>
+          </div>
+          <div class="item">
+			<a href="#"><img src="../images/large/musicians03.jpg"></a>
+          </div>
+          <div class="item">
+			<a href="#"><img src="../images/large/musicians04.jpg"></a>
+          </div>
+          <div class="item">
+			<a href="#"><img src="../images/large/musicians05.jpg"></a>
+          </div>
+      </div>
+  
+    <!-- Carousel nav -->
+      <a class="carousel-control left" href="#musiciansCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#musiciansCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+      
+<br /><br /><br />      
+
+<h1>Carousel Gallery with Three Images</h1>
+  <!-- OCEAN GALLERY  -->        
+  <div id="oceanCarousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+          <div class="active item">
+          <a href="#"><img src="../images/small/ocean01.jpg"></a>
+          <a href="#"><img src="../images/small/ocean02.jpg"></a>
+          <a href="#"><img src="../images/small/ocean03.jpg"></a>
+          </div>
+          <div class="item">
+          <a href="#"><img src="../images/small/ocean04.jpg"></a>
+          <a href="#"><img src="../images/small/ocean05.jpg"></a>
+          <a href="#"><img src="../images/small/ocean06.jpg"></a>
+          </div>
+          <div class="item">
+          <a href="#"><img src="../images/small/ocean07.jpg"></a>
+          <a href="#"><img src="../images/small/ocean08.jpg"></a>
+          <a href="#"><img src="../images/small/ocean09.jpg"></a>
+          </div>
+      </div>
+  
+    <!-- Carousel nav -->
+      <a class="carousel-control left" href="#oceanCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#oceanCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+      
+<br /><br />      
+<p>Example by Paul Lyons. May your day be filled with problems that are solved and allow you to go out to lunch on time.</p>      
+      
+</div>
+
+</body>
+</html>
