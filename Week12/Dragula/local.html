@@ -1,0 +1,55 @@
+<style>
+#append-area {
+  width: 100px;
+  height: 100px;
+  background: #888;
+  position: absolute;
+  top: 90px;
+  left: 10px;
+}
+</style>
+
+<p id="text">Lorem ipsum dolor sit amet.</p>
+<button id="save">Save localStorage</button>
+<button id="clear">Clear localStorage</button>
+
+<div id="append-area"></div>
+
+<script>
+$(function() {
+  var getPos = JSON.parse(localStorage.getItem("appended"));
+  var currentPos = {
+    top: 0,
+    left: 0
+  };
+  if (getPos !== null && getPos.top !== null) {
+    $('#append-area').css({
+      top: getPos.top,
+      left: getPos.left
+   }).append(getPos.txt);
+  };
+
+  $('#append-area').draggable({
+
+    drag: function(event, ui) {
+
+      currentPos = $(this).position();
+    }
+  });
+
+  $("#save").click(function() {
+    var text = $("#text").text();
+    currentPos.txt = text;
+    $("#append-area").append(text + "<br>");
+    localStorage.setItem("appended", JSON.stringify(currentPos));
+  });
+
+  $("#clear").click(function() {
+    window.localStorage.clear();
+    window.location.reload();
+  });
+
+});
+</script>
+
+

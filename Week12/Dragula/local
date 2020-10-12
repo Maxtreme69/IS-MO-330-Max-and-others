@@ -1,0 +1,18 @@
+<style>
+#append-area {
+  width: 100px;
+  height: 100px;
+  background: #888;
+  position: absolute;
+  top: 90px;
+  left: 10px;
+}
+</style>
+
+<p id="text">Lorem ipsum dolor sit amet.</p>
+<button id="save">Save localStorage</button>
+<button id="clear">Clear localStorage</button>
+
+<div id="append-area"></div>
+
+
