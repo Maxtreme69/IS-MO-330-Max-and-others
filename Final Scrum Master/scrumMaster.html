@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style src="scrumMaster.css"></style>
+
+<link rel="stylesheet" href="scrumMaster.css">
+</head>
+
+
+
+
+
+<img class="palette" src="colourPallete.webp" data-toggle="modal" data-target="#exampleModal">
+<!-- REFERENCE
+https://pixabay.com/vectors/artist-colorful-paint-brush-palette-1297400/
+ -->
+<!-- Modal -->
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Customise</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div style="text-align:center">
+        <table>
+        <tr>
+        <th>
+          <h4>Cards</h4>
+          </th>
+
+          <th class="position">
+              <span onclick="greenCard()" class="dot"></span>
+              <span onclick="yellowCard()" class="dot2"></span>
+              <span onclick="blueCard()" class="dot3"></span>
+              <span onclick="redCard()" class="dot4"></span>
+              <span onclick="purpleCard()" class="dot5"></span>
+          </th>
+
+        </tr>
+        </table>
+      </div>
+
+      <div class="modal-footer">
+           <div style="text-align:center">
+        <table>
+
+        <tr>
+            <th>
+          <h4>Background</h4>
+          </th>
+
+          <th class="position2">
+              <span onclick="greenBackground()" class="dotBackground"></span>
+              <span onclick="yellowBackground()" class="dot2Background"></span>
+              <span onclick="blueBackground()" class="dot3Background"></span>
+              <span onclick="redBackground()" class="dot4Background"></span>
+              <span onclick="purpleBackground()" class="dot5Background"></span>
+          </th>
+
+        </tr>
+        </table>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+<h1> SCRUM MASTER</h1>
+
+<body>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+<!--     Mohamed REWorked Code , Creates 2 divs for display of project name and members -->
+    <div class="AssignmentDisplay">
+        <u>Project Name:</u>
+      </div>
+    <div class="nameDisplay">
+        <u style="visibility: hidden">Group Members:</u>
+    </div>
+
+<!--     Finnish -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+
+              <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Monday</p>
+                        <p>1st</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+               <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Tuesday</p>
+                        <p>2nd</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Wednesday</p>
+                        <p>3rd</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Thursday</p>
+                        <p>4th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Friday</p>
+                        <p>5th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Saturday</p>
+                        <p>6th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Sunday</p>
+                        <p>7th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Monday</p>
+                        <p>8th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Tuesday</p>
+                        <p>9th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Wednesday</p>
+                        <p>10th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Thursday</p>
+                        <p>11th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Friday</p>
+                        <p>12th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Saturday</p>
+                        <p>13th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Sunday</p>
+                        <p>14th</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead day">Monday</p>
+                        <p>15</p>
+                        <p>October</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>
+        </div>
+  </div>
+
+
+    <div id="app-title">
+                <div>
+               </div>
+            </div>
+         </div>
+    </header>
+
+<!--     firebase test
+ -->   
+<!--      Name <input id="namebox" type="text"></input> <br><br>
+     Roll No <input id="rollbox" type="text"></input> <br><br>
+     Section <input id="secbox" type="text"></input> <br><br>
+     Gender <input id="genbox" type="text"></input> <br><br>
+
+     Roll No <button id="insert">INSERT</button> 
+     Section <button id="select">SELECT</button> 
+     Section <button id="update">UPDATE</button> 
+     Gender <button id="delete">DELETE</button>  -->
+
+    <main id="app">
+        <section id="board">
+            <div id="logo">
+                <div class="shape">
+                   </div>
+                <div id="creds">
+              </div>
+            </div>
+
+
+            <div id="select-form4Group">
+                <select name="members" id="select-tab">
+                <option >Group members
+                </option>
+            </select>
+                <button id="buttonn">+</button>
+            </div>
+
+            <div id="add-task-form">
+                <input id="task-value" placeholder="Add Card">
+                <button onclick="cardTask()" id="add-task">+</button>
+            </div>
+
+        </section>
+        <section id="columns">
+            <div class="columnn dropzone">
+                
+                <h3 class="column-title">Backlog</h3>
+                <ul class="tasks" id="tasks-added">
+
+                </ul>
+            </div>
+            <div class="columnn dropzone">
+                
+                <h3 class="column-title">Todo</h3>
+            </div>
+            <div class="columnn dropzone">
+               
+                <h3 class="column-title">Progressing</h3>
+            </div>
+            <div class="columnn dropzone">
+               
+                <h3 class="column-title">Done</h3>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="bg-modal">
+
+        <div class="modal-content">
+            <div class="close">+</div>
+            Register the New member Please!
+            <input type="text" placeholder="New Member Name..." class="input name">
+<!--             <input type="text" placeholder="New Member Email.." class="input email">
+ -->            <!-- MOHAMED REWORKED CODE - CHANGED EMAIL DISPLAY TO PROJECT NAME...... -->
+            <input type="text" placeholder="Project Name...." class="input email">
+<!--             FINNISHHHHHHHHHHHHHHH HEREEEEEEE -->
+            <button class="bt">SUBMIT</button>
+        </div>
+    </div>
+
+<!-- Firebase Libraries --> 
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+
+<!-- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+ -->
+
+
+</body>
+
+<footer></footer>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+    var itemsMainDiv = ('.MultiCarousel');
+    var itemsDiv = ('.MultiCarousel-inner');
+    var itemWidth = "";
+
+    $('.leftLst, .rightLst').click(function () {
+        var condition = $(this).hasClass("leftLst");
+        if (condition)
+            click(0, this);
+        else
+            click(1, this)
+    });
+
+    ResCarouselSize();
+
+    $(window).resize(function () {
+        ResCarouselSize();
+    });
+
+    //this function define the size of the items
+    function ResCarouselSize() {
+        var incno = 0;
+        var dataItems = ("data-items");
+        var itemClass = ('.item');
+        var id = 0;
+        var btnParentSb = '';
+        var itemsSplit = '';
+        var sampwidth = $(itemsMainDiv).width();
+        var bodyWidth = $('body').width();
+        $(itemsDiv).each(function () {
+            id = id + 1;
+            var itemNumbers = $(this).find(itemClass).length;
+            btnParentSb = $(this).parent().attr(dataItems);
+            itemsSplit = btnParentSb.split(',');
+            $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+            if (bodyWidth >= 1200) {
+                incno = itemsSplit[3];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 992) {
+                incno = itemsSplit[2];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 768) {
+                incno = itemsSplit[1];
+                itemWidth = sampwidth / incno;
+            }
+            else {
+                incno = itemsSplit[0];
+                itemWidth = sampwidth / incno;
+            }
+            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+            $(this).find(itemClass).each(function () {
+                $(this).outerWidth(itemWidth);
+            });
+
+            $(".leftLst").addClass("over");
+            $(".rightLst").removeClass("over");
+        });
+    }
+
+
+    //this function used to move the items
+    function ResCarousel(e, el, s) {
+        var leftBtn = ('.leftLst');
+        var rightBtn = ('.rightLst');
+        var translateXval = '';
+        var divStyle = $(el + ' ' + itemsDiv).css('transform');
+        var values = divStyle.match(/-?[\d\.]+/g);
+        var xds = Math.abs(values[4]);
+        if (e == 0) {
+            translateXval = parseInt(xds) - parseInt(itemWidth * s);
+            $(el + ' ' + rightBtn).removeClass("over");
+
+            if (translateXval <= itemWidth / 2) {
+                translateXval = 0;
+                $(el + ' ' + leftBtn).addClass("over");
+            }
+        }
+        else if (e == 1) {
+            var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+            translateXval = parseInt(xds) + parseInt(itemWidth * s);
+            $(el + ' ' + leftBtn).removeClass("over");
+
+            if (translateXval >= itemsCondition - itemWidth / 2) {
+                translateXval = itemsCondition;
+                $(el + ' ' + rightBtn).addClass("over");
+            }
+        }
+        $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+    }
+
+    //It is used to get some elements from btn
+    function click(ell, ee) {
+        var Parent = "#" + $(ee).parent().attr("id");
+        var slide = $(Parent).attr("data-slide");
+        ResCarousel(ell, Parent, slide);
+    }
+});
+
+var e = document.getElementsByClassName('item')
+
+e.onmouseover = function(){e.style.backgroundColor = "blue"}
+
+
+
+//Mohameds database
+  var firebaseConfig = {
+      apiKey: "AIzaSyD4c8phHe-a5-qP0S1vysQFSxP6exmYrl0",
+      authDomain: "bis-assignment.firebaseapp.com",
+      databaseURL: "https://bis-assignment.firebaseio.com",
+      projectId: "bis-assignment",
+      storageBucket: "bis-assignment.appspot.com",
+      messagingSenderId: "1044946292330",
+      appId: "1:1044946292330:web:eb88d4d34b8475f9410413"
+  };
+
+
+
+ //Maxs database
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  // var firebaseConfig = {
+  //   apiKey: "AIzaSyCFq9xu4uLnQTOxQfxxpG8G3_yKAKOAxLQ",
+  //   authDomain: "scrum-master-312b0.firebaseapp.com",
+  //   databaseURL: "https://scrum-master-312b0.firebaseio.com",
+  //   projectId: "scrum-master-312b0",
+  //   storageBucket: "scrum-master-312b0.appspot.com",
+  //   messagingSenderId: "553700108542",
+  //   appId: "1:553700108542:web:c2cd892193166eca505daf",
+  //   measurementId: "G-NN5TQEM2GC"
+  // };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+
+//   var cardTask = document.getElementById("task-value").value;
+// var id = 0;
+// function cardTask(id, cardTask) {
+//   id += 1;
+//   firebase.database().ref('users/' + id).set({
+//     // Task Number: id,
+//     Tasks: cardTask
+//   });
+// }
+
+
+
+
+
+
+
+  document.getElementById("add-task").addEventListener('click', function() {
+      let testValue = document.getElementById("task-value").value;
+
+      console.log(testValue);
+
+      if (testValue) {
+          addTask(testValue);
+      } else {
+          alert("Please select an activity to add");
+      }
+      document.getElementById("task-value").value = "";
+  })
+
+
+
+  const addTask = (testValue) => {
+
+      let task = document.createElement("li");
+      task.classList.add('task');
+      task.classList.add('fill');
+      task.draggable = true;
+      task.addEventListener('dragstart', dragStart);
+      task.addEventListener('dragend', dragEnd);
+
+      let textContent = document.createElement('div');
+      textContent.classList.add("task-content");
+  
+      let trash = document.createElement('div');
+      trash.innerText = "X";
+      trash.classList.add('trash');
+      trash.addEventListener('click', removeTask)
+
+      let window = document.createElement('button');
+      window.innerText = "add";
+      window.classList.add('addInput');
+      window.id = "input";
+      window.addEventListener('click', input2);
+
+      task.id = "input2";
+      // task.id = "input";
+
+
+      let textNode = document.createTextNode(testValue);
+      textContent.appendChild(textNode);
+
+
+        // -----------------------------------------ADDED-------------------------------------------------------
+// MOHAMED's Reworked code , dynamically scores group lists in the instanstiated cards 
+        // let selectList = document.createElement("select");
+        // let memberOption = document.createElement("option");
+        // selectList.appendChild(memberOption);
+        // memberOption.textContent = "Group members";
+        // memberOption.classList.add('member-option-style');
+
+        // task.appendChild(selectList);
+// FINISHHHH
+        // ------------------------------------------------------------------------------------------------------------------
+
+
+
+      task.appendChild(textContent);
+      task.appendChild(trash);
+
+      task.appendChild(textContent);
+      task.appendChild(window);
+
+      let tasks = document.getElementById("tasks-added");
+      tasks.prepend(task);
+  }
+
+
+  const removeTask = (event) => {
+      let task = event.target.parentNode;
+      task.remove();
+  };
+
+   const input = (event) => {
+        let txtNewInputBox = document.createElement('li');
+        txtNewInputBox.innerHTML = "<input type='text' id='newInputBox'>";    
+        document.getElementById("input2").appendChild(txtNewInputBox);
+  };
+
+    const input2 = (event) => {
+        let txtNewInputBox = document.createElement('li');
+        let txtNewInputBox2 = document.createElement('li');
+        txtNewInputBox.innerHTML = "<input id='delete' type='text' class='form-control' name='task' placeholder='Enter Task Description'>";    
+        document.getElementById("input2").appendChild(txtNewInputBox);
+
+        txtNewInputBox2.innerHTML = "<button onclick='myFunction()' class='btn btn-danger' data-inline='true' id='delete2'>Remove</button><button onclick='inputText()' data-inline='true' class='btn btn-success' id='delete3'>Submit</button>"; 
+        document.getElementById("input2").appendChild(txtNewInputBox2);   
+
+        // txtNewInputBox2.innerHTML = "<button onclick='submit()' class='btn btn-success' id='submit'>Submit</button>"; 
+        // document.getElementById("input3").appendChild(txtNewInputBox2);   
+  };
+
+// var nameV, rollV, secV, genV, cardInput
+
+// function Ready(){
+//   nameV = document.getElementById('namebox').value;
+//   rollV = document.getElementById('rollbox').value;
+//   secV = document.getElementById('secbox').value;
+//   genV = document.getElementById('genbox').value;
+//   cardInput = document.getElementById('delete').value;
+// }
+
+// document.getElementById('insert').onclick = function(){
+//   Ready();
+//   firebase.database().ref('student/'+rollV).set({
+//     NameOfStudent: nameV,
+//     RollNo: rollV,
+//     Section: secV,
+//     Gender: genV,
+//     Input: cardInput
+//   })
+// }
+
+// document.getElementById("select").onclick = function(){
+//   Ready();
+//   firebase.database().ref('student/'+rollV).on('value', function(snapshot){
+//     document.getElementById('namebox').value= snapshot.val().NameofStudent;
+//     document.getElementById('secbox').value= snapshot.val().Section;
+//     document.getElementById('genbox').value= snapshot.val().Gender;
+//     console.log(snapshot.val());
+
+//   });
+// }
+
+// // Update process
+// document.getElementById('insert').onclick = function(){
+//   Ready();
+//   firebase.database().ref('student/'+rollV).update({
+//     NameOfStudent: nameV,
+//     Section: secV,
+//     Gender: genV
+//   });
+// }
+
+// // Deletion process
+// document.getElementById('delete').onclick = function(){
+//   Ready();
+//   firebase.database().ref('student/'+rollV).remove();
+// }
+
+//   document.getElementById("delete3").onclick = function(){
+//   Ready();
+//   firebase.database().ref('input/').on('value', function(snapshot){
+//     document.getElementById('delete').value= snapshot.val().cardInput;
+//     // document.getElementById('secbox').value= snapshot.val().Section;
+//     // document.getElementById('genbox').value= snapshot.val().Gender;
+//     console.log(snapshot.val());
+//   });
+// }
+
+//   function inputText() {
+//   // const inputText = document.getElementById("delete").value;
+//   // let txtNewInputBox = document.createElement('li');
+//   // let task = document.createElement("li");
+//   // let inputText = document.getElementById("delete").value;
+//   let text = document.getElementById("delete").value;
+//   // document.getElementById("input2").appendChild(task.innerHTML);
+//   // console.log(task.innerHTML);
+//   alert(text);
+
+  // const newOption = document.createElement("li");
+  //         newOption.textContent = inputText;
+
+  // document.getElementById("input2").appendChild(txtNewInputBox);
+
+
+//           select.appendChild(newOption);
+
+//   firebase.database().ref('delete').push({
+//               task: inputText
+// });
+// }
+// Get a reference to the database service
+// var database = firebase.database();
+
+
+// function submit() {
+//       var myobj = document.getElementById("delete3");
+//        alert("You clicked the submit button"); 
+// }
+
+// function writeUserData(delete3) {
+//   firebase.database().ref('users/' + delete3).set({
+//     input: delete3
+//   });
+// }
+
+
+function myFunction() {
+      var myobj = document.getElementById("delete");
+       myobj.remove();
+       var myobj2 = document.getElementById("delete2");
+       myobj2.remove();  
+       var myobj3 = document.getElementById("delete3");
+       myobj3.remove();  
+}
+
+  const removeInput = (event) => {
+     var myobj = document.getElementById("remove");
+     myobj.remove();
+  }
+
+  // This event is fired when you start dragging the note
+  const dragStart = (Event) => {
+      Event.target.classList += ' hold';
+
+      taskz = Event.target;
+      setTimeout(() => Event.target.className = "invisible", 0);
+      let yo = document.querySelectorAll("columnn dropzone");
+      yo.classList += ' hovered';
+  }
+
+  // This event is fired when you stop dragging the note
+  const dragEnd = (Event) => {
+      Event.target.className = 'task';
+
+  }
+
+  const dropzones = document.querySelectorAll(".dropzone");
+  console.log(dropzones);
+
+  //Is activated when you drag over the coloumn (Only applies for less than a sec)  
+  const dragEnter = (event) => {
+      event.preventDefault();
+      console.log("ENTER");
+      if (event.target.className === "column dropzone") {
+          event.target.className += ' hovered';
+
+      }
+  };
+  // Is activated when you drag over and so long as your still hovered over the coloumn
+  const dragOver = (event) => {
+      // $('.column dropzone').css('background', 'blue'); 
+      event.preventDefault();
+      console.log("OVER");
+      this.style.background=red;
+  }
+
+  // Activate when you leave the coloumn
+  const dragLeave = (event) => {
+      event.preventDefault();
+      console.log("LEAVE");
+  }
+
+  // Only applies when you drop a note onto the coloumn and hence append the note onto the coloumn (List)
+  const dragDrop = (event) => {
+      console.log(event.target);
+      // if (event.target.className === "column") {
+      event.target.append(taskz);
+  }
+
+  // This for loop iterates over all oof the coloumns and listens for whenever the 4 events are fired
+  for (const dropzone of dropzones) {
+      dropzone.addEventListener('dragenter', dragEnter);
+      dropzone.addEventListener('dragover', dragOver);
+      dropzone.addEventListener('dragleave', dragLeave);
+      dropzone.addEventListener('drop', dragDrop);
+  }
+
+  document.getElementById("buttonn").addEventListener('click', doSomething);
+
+  function doSomething() {
+      document.querySelector(".bg-modal").style.display = 'flex';
+  }
+
+  document.querySelector('.close').addEventListener('click', close);
+
+  function close() {
+      document.querySelector(".bg-modal").style.display = 'none';
+      document.querySelector(".name").value = "";
+      document.querySelector(".email").value = "";
+  }
+
+
+  const subButton = document.querySelector(".bt").addEventListener('click', addNewMember);
+
+  function addNewMember() {
+      const nameInp = document.querySelector(".name").value;
+      const emailImp = document.querySelector(".email").value;
+
+
+// ------------------------------------------------ADDED------------------------------------------------------------
+// Mohamed's Reworked Code - Dynamically updates the members display whenever a new member is added and
+// displays project name       
+        const nameBlock = document.querySelector(".nameDisplay");
+        nameBlock.textContent += " " + nameInp;
+        // const counter = 0;
+        // if (counter = 0) {
+        const assignmentBlock = document.querySelector(".AssignmentDisplay");
+        assignmentBlock.textContent += emailImp + " ";
+// FINNISH    
+        // -------------------------------------------------------------------------------------------------------------------
+
+
+      if (nameInp) {
+
+          const select = document.querySelector("#select-tab");
+
+          const newOption = document.createElement("option");
+          newOption.textContent = nameInp;
+
+          select.appendChild(newOption);
+          document.querySelector(".bg-modal").style.display = 'none';
+
+          document.querySelector(".name").value = "";
+          document.querySelector(".email").value = "";
+
+          firebase.database().ref('Members').push({
+              Member: nameInp,
+              Email: emailImp
+          });
+
+      } else {
+          alert("New Member must atleast have a name!");
+      }
+  }
+
+// Changes Card Color
+  function greenCard() {
+    $('.task').css('background-color', 'green'); 
+  }
+
+  function yellowCard() {
+    $('.task').css('background', 'yellow'); 
+  }
+
+  function blueCard() {
+    $('.task').css('background', 'blue'); 
+  }
+
+  function redCard() {
+    $('.task').css('background', 'red'); 
+  }
+
+    function purpleCard() {
+    $('.task').css('background', 'purple'); 
+  }
+
+
+// Changes Background Color
+  function greenBackground() {
+    $('body').css('background', 'green'); 
+  }
+
+  function yellowBackground() {
+    $('body').css('background', 'yellow'); 
+  }
+
+  function blueBackground() {
+    $('body').css('background', 'blue'); 
+  }
+
+  function redBackground() {
+    $('body').css('background', 'red'); 
+  }
+
+    function purpleBackground() {
+    $('body').css('background', 'purple'); 
+  }
+</script>
+
+
+<script type="scrumMaster.js"></script>
